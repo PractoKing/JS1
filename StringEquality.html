@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS PRAC4</title>
+    </head>
+    <body>
+        <h1>Comparison Of Two Strings</h1>
+        Enter the first String
+        <input type="text" id="s1"/>
+        Enter the second String
+        <input type="text" id="s2"/>
+        <br><br>
+        <input type="button" Value="Compare localeCompare()" onclick="comp()"/>
+        <br><br>
+        <input type="button" value="using Strict Equalty operator" onclick="equality()"/>
+
+        <script>
+            function comp(){
+                var s1=document.getElementById("s1").value;
+                var s2=document.getElementById("s2").value;
+                let result=s1.localeCompare(s2);
+                if(result==0){
+                    alert("are equal")
+                }
+                else{
+                    alert("not equal")
+                }
+            }
+            function equality(){
+                var s1=document.getElementById("s1").value;
+                var s2=document.getElementById("s2").value;
+                var s3=s1.toUpperCase();
+                var s4=s2.toUpperCase();
+                // console.log(s4);
+                
+                if(s3==s4){
+                    alert("are equal")
+                }
+                else{
+                    alert("not equal")
+                }
+            }
+            
+            
+        </script>
+        
+
+
+
+    </body>
+</html>

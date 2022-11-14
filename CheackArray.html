@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>JS PRAC7</title>
+</head>
+<body>
+    <h1>Array operations</h1>
+    <input type="button" value="try it" onclick="checkObject()"/>
+    <script>
+        var array=[];
+        var x=prompt("Enter the size of array");
+
+        for(i=0;i<x;i++){
+            array[i]=prompt('Enter array element '+(i+1));
+
+        }
+
+        for(i=0;i<x;i++){
+            document.write("the element at position  "+(i)+" is : "+array[i]+"</br></br>");
+
+        }
+        function insertObject(arr,obj){
+            arr.push(obj);
+            console.log(arr);
+            document.write(arr+"</br></br>");
+
+        }
+        let object=[4,5,6];
+        insertObject(array,object);
+        function checkObject(arr){
+            const res=Array.isArray(arr);
+            if(res){
+                document.write("this is an  array <br> <br>");
+            }
+            else{
+                document.write("Not an array");
+            }
+        }
+        checkObject(array);
+    </script>
+
+</body>
+</html>

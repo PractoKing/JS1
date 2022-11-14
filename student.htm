@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    Name:     <input type="text" id="name"><br><br>
+    Mobile NO:<input type="text" id="mob"><br><br>
+    Email     :<input type="text" id="email"><br><br>
+    <input type="button" value="Submit" onclick="isValid()">
+    </center>
+    <script>
+
+        function isValid(){
+            var name = document.getElementById("name").value;
+            var mob =document.getElementById("mob").value;
+            var email = document.getElementById("email").value;
+            
+            if(name=="" || name==null){
+                window.alert("Invaild Name");
+            }else if(mob==null || mob.length!=10){
+                window.alert("Mob not Valid");
+            }else if(!email.split('').includes("@")){
+                window.alert("email Not Valid")
+            }else{
+                document.write("Name is "+name+"<br> mob: "+mob+"<br> Email id: "+email);
+            }
+        }
+
+
+    </script>
+</body>
+</html>

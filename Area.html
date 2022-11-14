@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Practicle</title>
+</head>
+<body>
+<h2>Area of Rectangle</h2>
+Enter the length
+<input type="text" id ="length"/>
+Enter the breadth
+<input type="text" id ="breadth"/>
+<input type="button" value ="calculate" onclick="calculateArea()"/>
+
+<h2>Area of Circle</h2>
+Enter thye radius of the circle
+<input type="text" id ="radius"/>
+<input type ="button" value ="calculate" onclick ="calculateAreaOfCircle()"/>
+
+<h2>Area of Square</h2>
+Enter the side of square
+<input type = "text" id ="sqlength"/>
+<input type = "button" value ="calculate" onclick ="calculateAreaofSquare()"/>
+
+<h2>Area of Trapazium</h2>
+Enter the base of the trapazium
+<input type = "text" id ="base"/>
+Enter the height of the trapazium
+<input type = "text" id ="base"/>
+<input type = "button" value ="calculate" onclick ="calculateAreaofTrapazium()"/>
+<script>function
+calculateArea()
+{
+var a1 = document.getElementById("length").value;
+var b1 = document.getElementById("breadth").value;
+alert("Area of reactangle"+" "+(a1*b1))
+
+}
+
+function
+calculateAreaOfCircle(){
+var r1 = document.getElementById("radius").value;
+alert("Area of circle"+(Math.PI*r1*r1))
+}
+
+function
+calculateAreaofSquare()
+{
+var s1 = document.getElementById("sqlength").value;
+alert("Area of square"+(s1*s1))
+}
+
+
+function
+calculateAreaofTrapazium()
+{
+var b1= document.getElementById("base").value;
+var h1 = document.getElementById("height").value;
+alert("Area of Trapazium"+(((1/2)*b1*h1))
+}
+
+
+</script>
+</body>
+</html>
